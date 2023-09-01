@@ -28,7 +28,7 @@ onMounted(() => {
         <select v-model="countriesStore.selectedRegion" name="region" id="region">
           <option value="">Filter by Region</option>
           <option value="Africa">Africa</option>
-          <option value="America">America</option>
+          <option value="Americas">America</option>
           <option value="Asia">Asia</option>
           <option value="Europe">Europe</option>
           <option value="Oceania">0ceania</option>
@@ -55,7 +55,7 @@ onMounted(() => {
           <div class="country-info">
             <h3>{{ country.name.common }}</h3>
             <p><strong>Population:</strong> {{ country.population }}</p>
-            <p><strong>Region:</strong> {{ country.region?.common }}</p>
+            <p><strong>Region:</strong> {{ country.region }}</p>
             <p><strong>Capital:</strong> {{ country.capital?.[0] }}</p>
           </div>
           
@@ -69,7 +69,7 @@ onMounted(() => {
 <style scoped>
 section{
   background: #FAFAFA;
-  height: 100vh;
+  height: 1000vh;
 }
 .second-nav{
   display: flex;
@@ -85,6 +85,7 @@ section{
   padding: 16px 32px;
   border-radius: 5px;
   background: #FFF;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
   
 }
 .input-box img{
@@ -163,7 +164,7 @@ select option:checked {
 /* Style on focus */
 select:focus {
   outline: none;
-  border-color: #1e87f0;
+  border-color: #414242;
   box-shadow: 0 0 0 2px rgba(30, 135, 240, 0.2);
 }
 
@@ -178,7 +179,7 @@ select:hover {
   gap: 40px;
 }
 .country-card{
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   border-radius: 5px;
   background: #FFF;
 }
@@ -192,7 +193,7 @@ height: 160px;
   align-items: flex-start;
   flex-direction: column;
   gap: 8px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .country-info h3{
   color: #111517;
@@ -219,7 +220,7 @@ height: 160px;
 }
 .input-box{
   padding: 19px 200px 19px 32px;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 .input-box img{
   width: 17.5px;
@@ -237,7 +238,7 @@ input{
 select{
   font-size: 14px;
   padding: 19px 77px 19px 24px;
-  border: 1px solid red
+  /*border: 1px solid red;*/
 }
 
 }
